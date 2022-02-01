@@ -1,0 +1,295 @@
+body {
+	margin: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, "IBMPlexSans", "Open Sans",
+		"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* reset bootstrap */
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.form-control {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.text_decoration_none {
+	text-decoration: none;
+}
+.text_decoration_none:hover {
+	text-decoration: none;
+}
+/* reset bootstrap end */
+
+.templete_layout {
+	display: flex;
+	flex-direction: row;
+	min-height: 100%;
+	align-items: stretch;
+}
+.templete_layout_item {
+	display: flex;
+}
+.templete_layout_item_left {
+	background: #ffffff;
+	order: 1;
+	flex: 0 0 80px;
+	height: 100vh;
+}
+.templete_layout_item_content {
+	background: #f6f6f6;
+	order: 2;
+	/* padding: 1rem; */
+	width: 100%;
+}
+
+.logo {
+	margin-top: 24px;
+	width: 40px;
+	height: 40px;
+}
+
+.left_menu {
+	list-style-type: none;
+	padding: 0px;
+	margin-top: 40px;
+}
+.left_menu li {
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.left_menu li img {
+	width: 20px;
+	height: 20px;
+}
+
+.left_menu li p {
+	font-family: "IBMPlexSans";
+	font-weight: 500;
+	font-size: 10px;
+	color: #2a6aa6;
+	line-height: 13px;
+	margin-bottom: 0px;
+	padding-top: 4px;
+}
+
+.active_menu {
+	background: rgba(92, 155, 213, 0.1);
+}
+.active_menu p {
+	font-weight: 700 !important;
+}
+
+.left_bottom {
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+.left_bottom_avatar {
+	width: 32px;
+	height: 32px;
+}
+.left_bottom_arrow {
+	width: 16px;
+	height: 16px;
+}
+
+.main_container {
+	padding: 30px 60px 0px 60px;
+	width: 100%;
+}
+
+.heading_h2 {
+	font-family: "IBMPlexSans";
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 47px;
+	letter-spacing: -0.02em;
+	color: #475765;
+}
+
+.select_label {
+	font-family: "IBMPlexSans";
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #475765;
+	margin-bottom: 0px;
+}
+.select_input {
+	border: 0px;
+	border-bottom-color: currentcolor;
+	border-bottom-style: none;
+	border-bottom-width: 0px;
+	border-radius: 0px;
+	border-bottom: 1px solid #a5a5a5 !important;
+	background: transparent !important;
+	padding-left: 0px;
+	color: #475765;
+	font-family: "IBMPlexSans";
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+
+	background-image: url("/images/arrow_drop_down.svg") !important;
+	background-position: 100% 14px, 100% 0 !important;
+	background-size: 20px !important;
+	background-repeat: no-repeat !important;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+}
+.select_input:focus,
+.select_input:active:focus,
+.select_input.active:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.select_input:invalid {
+	color: #a5a5a5;
+}
+.select_input:disabled {
+	color: #a5a5a5;
+}
+
+.select_input option {
+	color: #475765;
+}
+
+.main_body {
+	border: 1px solid #e4e4e4;
+	box-sizing: border-box;
+	border-radius: 8px;
+	height: 64vh;
+	overflow-y: scroll;
+	margin-top: 20px;
+}
+
+.empty_list img {
+	width: 322px;
+	height: 172px;
+}
+.empty_list p {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	color: #475765;
+}
+
+.bottom_container {
+	margin-top: 15px;
+}
+
+.cancel_btn {
+	background: #ededed;
+	border-radius: 8px;
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color: #475765;
+	padding-left: 16px;
+	padding-right: 16px;
+	height: 36px;
+}
+
+.confirm_btn {
+	background: #ed7d31;
+	border-radius: 8px;
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color: #ffffff;
+	padding-left: 16px;
+	padding-right: 16px;
+	height: 36px;
+}
+
+.confirm_btn_disabled {
+	background: #a5a5a5;
+	pointer-events: none;
+}
+
+.confirm_btn_active {
+	background: #ed7d31;
+	pointer-events: initial;
+}
+
+.data_table {
+	margin-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+}
+
+.data_table thead tr th {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #475765;
+	white-space: nowrap;
+	border: 0px;
+}
+
+.data_table tbody tr {
+	border: 0px;
+	cursor: pointer;
+}
+
+.data_table tbody tr td {
+	border: 0px;
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 21px;
+	color: #475765;
+	background: #ededed;
+}
+.data_table tbody tr td:nth-child(2) {
+	/* border-radius: 8px; */
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.data_table tbody tr td:nth-last-child(1) {
+	/* border-radius: 8px; */
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.check_box_row {
+	background: transparent !important;
+	vertical-align: middle !important;
+}
+
+.selected_row td:not(:nth-child(1)) {
+	background: rgba(92, 155, 213, 0.1) !important;
+}
+
+.selected_row .check_box_row {
+	background: red;
+}

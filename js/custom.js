@@ -1,0 +1,134 @@
+var tableData = [
+	{
+		name: "Isabella Haywood-Jasmine Haywood-Toddler-Active",
+		startDate: "5/15/2020",
+		primaryCenter: "Day Early Learning at Eastern Star Church",
+		secondaryCenter: "Day Early Learning Purdue University",
+		points: "100",
+	},
+	{
+		name: "Darryl Harvey-Ronald Sandlin-Infant-Match",
+		startDate: "1/20/2023",
+		primaryCenter: "Day Early Learning Purdue University",
+		secondaryCenter: "Day Early Learning at IU Health, Select item 5",
+		points: "98",
+	},
+	{
+		name: "Pebbles Flinstone-Joel Austin-Two YO-Active",
+		startDate: "1/19/2022",
+		primaryCenter: "Day Early Learning at IU Health",
+		secondaryCenter: "Day Early Learning at Park 100",
+		points: "94",
+	},
+	{
+		name: "Elijah Avery Cobon-Jason Handberg-Two YO-Match",
+		startDate: "3/15/2022",
+		primaryCenter: "Day Early Learning at Park 100",
+		secondaryCenter: "Day Early Learning at Eastern Star Church",
+		points: "92",
+	},
+];
+
+var selectedRowIndex = -1;
+
+// util function to crate dynamic table
+function createTable() {
+	// (C) CREATE HTML TABLE
+	// (C1) HTML TABLE STRING
+	var myTable = `<table class="table data_table"> 
+			<thead> 
+				<tr> 
+					<th scope="col"></th> 
+					<th scope="col">OPPORTUNITY NAME</th> 
+					<th scope="col">DESIRED START DATE</th> 
+					<th scope="col">PRIMARY CENTER</th> 
+					<th scope="col">SECONDARY CENTER</th> 
+					<th scope="col">PRIORITY POINTS</th> 
+				</tr> 
+			</thead> 
+		<tbody>`;
+
+	tableData.forEach((item, i) => {
+		// START NEW ROW
+		myTable += `<tr onclick="handleSelectRow(${i})" class="${
+			selectedRowIndex === i ? "selected_row" : ""
+		}">`;
+
+		// "NORMAL" CELL
+		myTable += `<td class="check_box_row">
+			<img src="${
+				selectedRowIndex === i
+					? "images/check_ring_round_light_selected.svg"
+					: "images/check_ring_round_light.svg"
+			}" />
+		</td>`;
+		myTable += `<td>${item.name}</td>`;
+		myTable += `<td>${item.startDate}</td>`;
+		myTable += `<td>${item.primaryCenter}</td>`;
+		myTable += `<td>${item.secondaryCenter}</td>`;
+		myTable += `<td>${item.points}</td>`;
+
+		// CLICK ON CELL TO DO SOMETHING
+		// myTable += `<td onclick="FUNCTION()">${value}</td>`;
+
+		// TO PASS IN A RUNNING NUMBER OR PARAMETER
+		// myTable += `<td onclick="FUNCTION(${i})">${value}</td>`;
+
+		// BREAK INTO NEXT ROW
+		myTable += "</tr>";
+	});
+
+	// (C3) CLOSE THE TABLE STRING
+	myTable += "</tbody> </table>";
+
+	// (D) ATTACH HTML TO CONTAINER
+	document.getElementById("dataTable").innerHTML = myTable;
+}
+
+// onchange of business group
+function handleChangeBusinessGroup(event) {
+	// var value = event.target.value;
+	// console.log(value);
+
+	document.getElementById("emptyList").style.display = "none";
+	createTable();
+}
+
+// onchange of centre
+function handleChangeCentre(event) {
+	// var value = event.target.value;
+	// console.log(value);
+
+	document.getElementById("emptyList").style.display = "none";
+	createTable();
+}
+
+// onchange of classroom
+function handleChangeClassroom(event) {
+	// var value = event.target.value;
+	// console.log(value);
+
+	document.getElementById("emptyList").style.display = "none";
+	createTable();
+}
+
+// select a row
+function handleSelectRow(index) {
+	// console.log(index);
+	selectedRowIndex = index;
+	createTable();
+	document
+		.getElementById("confirmSelection")
+		.classList.add("confirm_btn_active");
+}
+
+// onclick of cancel button
+function handleCancelSelectRow() {
+	if (selectedRowIndex != -1) {
+		selectedRowIndex = -1;
+		createTable();
+		document
+			.getElementById("confirmSelection")
+			.classList.remove("confirm_btn_active");
+	}
+}
