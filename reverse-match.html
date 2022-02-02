@@ -13,6 +13,10 @@
 			rel="stylesheet"
 			href="lib/bootstrap-4.0.0-dist/css/bootstrap.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="lib/bootstrap-select-1.13.14/dist/css/bootstrap-select.min.css"
+		/>
 
 		<!-- custom css -->
 		<link rel="stylesheet" href="css/reverse-match.css" />
@@ -92,24 +96,20 @@
 						<div class="col-md-4">
 							<label class="select_label">Business Group</label>
 							<select
-								class="form-control select_input"
-								required
+								class="form-control selectpicker select_input_2"
+								title="Select Business Group"
 								onchange="handleChangeBusinessGroup(event)"
 							>
-								<option value="" disabled selected>
-									Select Business Group
-								</option>
 								<option value="Purdue">Purdue</option>
 							</select>
 						</div>
 						<div class="col-md-4">
 							<label class="select_label">Centre</label>
 							<select
-								class="form-control select_input"
-								required
+								class="form-control selectpicker select_input_2"
+								title="Select Centre"
 								onchange="handleChangeCentre(event)"
 							>
-								<option value="" disabled selected>Select Centre</option>
 								<option value="Day Early Learning at Eastern Star Church">
 									Day Early Learning at Eastern Star Church
 								</option>
@@ -118,11 +118,10 @@
 						<div class="col-md-4">
 							<label class="select_label">Classroom</label>
 							<select
-								class="form-control select_input"
-								required
+								class="form-control selectpicker select_input_2"
+								title="Select Classroom"
 								onchange="handleChangeClassroom(event)"
 							>
-								<option value="" disabled selected>Select Classroom</option>
 								<option value="Dreamers - 0.0 Infants - RM-3601">
 									Dreamers - 0.0 Infants - RM-3601
 								</option>
@@ -165,7 +164,9 @@
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="lib/jquery-3.2.1.slim.min.js"></script>		
+		<script src="lib/jquery-3.2.1.slim.min.js"></script>
+		<script src="lib/popper.min.js"></script>
 		<script src="lib/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+		<script src="lib/bootstrap-select-1.13.14/dist/js/bootstrap-select.min.js"></script>
 	</body>
 </html>
