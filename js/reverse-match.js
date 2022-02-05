@@ -87,8 +87,8 @@ function createTable() {
 
 // onchange of business group
 function handleChangeBusinessGroup(event) {
-	// var value = event.target.value;
-	// console.log(value);
+	var value = event.target.dataset.value;
+	console.log(value);
 
 	document.getElementById("emptyList").style.display = "none";
 	createTable();
@@ -96,7 +96,7 @@ function handleChangeBusinessGroup(event) {
 
 // onchange of centre
 function handleChangeCentre(event) {
-	// var value = event.target.value;
+	// var value = event.target.dataset.value;
 	// console.log(value);
 
 	document.getElementById("emptyList").style.display = "none";
@@ -105,7 +105,7 @@ function handleChangeCentre(event) {
 
 // onchange of classroom
 function handleChangeClassroom(event) {
-	// var value = event.target.value;
+	// var value = event.target.dataset.value;
 	// console.log(value);
 
 	document.getElementById("emptyList").style.display = "none";
@@ -132,3 +132,39 @@ function handleCancelSelectRow() {
 			.classList.remove("confirm_btn_active");
 	}
 }
+
+// for custom select options
+for (const dropdown of document.querySelectorAll(".select_wrapper")) {
+	dropdown.addEventListener("click", function () {
+		this.querySelector(".select_container").classList.toggle("open");
+	});
+}
+
+for (const option of document.querySelectorAll(".select_custom_option")) {
+	option.addEventListener("click", function () {
+		if (!this.classList.contains("selected")) {
+			const selectedEle = this.parentNode.querySelector(
+				".select_custom_option.selected"
+			);
+			if (selectedEle) {
+				selectedEle.classList.remove("selected");
+			}
+			this.classList.add("selected");
+
+			this.closest(".select_container")
+				.querySelector(".select__trigger")
+				.classList.add("selected");
+			this.closest(".select_container").querySelector(
+				".select__trigger span"
+			).textContent = this.textContent;
+		}
+	});
+}
+
+document.addEventListener("click", function (e) {
+	for (const select of document.querySelectorAll(".select_container")) {
+		if (!select.contains(e.target)) {
+			select.classList.remove("open");
+		}
+	}
+});
