@@ -255,6 +255,7 @@ textarea {
 	background: red;
 }
 
+/* for custom select options - start */
 .select_wrapper {
 	position: relative;
 	user-select: none;
@@ -337,3 +338,4 @@ textarea {
 .select_custom_option.selected {
 	background: #ededed;
 }
+/* for custom select options - end */
