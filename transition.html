@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="lib/bootstrap-4.0.0-dist/css/bootstrap.min.css"
+		/>
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="css/transition.css" />
+
+		<!-- fonts -->
+		<link href="lib/fonts.css" rel="stylesheet" />
+
+		<title>Maxify Digital - Transition Dashboard</title>
+	</head>
+	<body>
+		<div class="templete_layout">
+			<!-- left panel -->
+			<div class="templete_layout_item templete_layout_item_left">
+				<div class="d-flex flex-column w-100">
+					<div class="d-flex justify-content-center">
+						<img src="images/logo.png" class="logo" alt="logo" />
+					</div>
+					<div class="d-flex justify-content-center">
+						<ul class="left_menu">
+							<li>
+								<a href="#" class="text_decoration_none">
+									<div>
+										<img src="images/distribution.svg" alt="" />
+									</div>
+									<p>Seat Distribution</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="text_decoration_none">
+									<div>
+										<img src="images/match.svg" alt="" />
+									</div>
+									<p>Find Match</p>
+								</a>
+							</li>
+							<li>
+								<a href="/reverse-match.html" class="text_decoration_none">
+									<div>
+										<img src="images/match.svg" alt="" />
+									</div>
+									<p>Reverse Match</p>
+								</a>
+							</li>
+							<li class="active_menu">
+								<a href="#" class="text_decoration_none">
+									<div>
+										<img src="images/transition.svg" alt="" />
+									</div>
+									<p>Transition Dashboard</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="d-flex align-items-end h-100">
+						<div class="left_bottom">
+							<img src="images/avatar.png" class="left_bottom_avatar" alt="" />
+							<img
+								src="images/arrow_drop_down.svg"
+								class="left_bottom_arrow"
+								alt=""
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- left panel end -->
+
+			<!-- main container -->
+			<div class="templete_layout_item templete_layout_item_content">
+				<div class="main_container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="heading_h2">Transition Dashboard</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 pr_5">
+							<div class="trans_container">
+								<div class="row pl-2">
+									<div class="col-md-12">
+										<h3 class="trans_heading_h2">Classroom Details</h3>
+									</div>
+								</div>
+
+								<div class="row pl-2 pr-2">
+									<div class="col-md-8">
+										<label class="select_label">Centre</label>
+										<div class="select_wrapper">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Select Centre</span>
+												</div>
+												<ul
+													class="select_custom_options"
+													onclick="handleChangeCentreLeft(event)"
+												>
+													<li
+														class="select_custom_option"
+														data-value="Day Early Learning at Eastern Star Church"
+													>
+														Day Early Learning at Eastern Star Church
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row pl-2 pr-2 mt-3">
+									<div class="col-md-8">
+										<label class="select_label">Classroom</label>
+										<div class="select_wrapper">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Select Classroom</span>
+												</div>
+												<ul
+													class="select_custom_options"
+													onclick="handleChangeClassroomLeft(event)"
+												>
+													<li
+														class="select_custom_option"
+														data-value="Dreamers - 0.0 Infants - RM-3601"
+													>
+														Dreamers - 0.0 Infants - RM-3601
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<label class="select_label">Days</label>
+										<div class="select_wrapper">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Select Days</span>
+												</div>
+												<ul
+													class="select_custom_options"
+													onclick="handleChangeDaysLeft(event)"
+												>
+													<li
+														class="select_custom_option"
+														data-value="Next 30 days"
+													>
+														Next 30 days
+													</li>
+													<li
+														class="select_custom_option"
+														data-value="Next 60 days"
+													>
+														Next 60 days
+													</li>
+													<li
+														class="select_custom_option"
+														data-value="Next 90 days"
+													>
+														Next 90 days
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="trans_body">
+									<div id="emptyListLeft" class="h-100">
+										<div
+											class="d-flex align-items-center justify-content-center h-100"
+										>
+											<div class="empty_list">
+												<img src="images/empty_state.png" alt="" />
+												<p>You haven't selected anything yet.</p>
+											</div>
+										</div>
+									</div>
+									<div id="dataListLeft">
+										<div class="d-flex justify-content-between">
+											<div>
+												<div class="trans_card mr_5">
+													<label class="d-block">Opportunity Name</label>
+													<div class="d-flex justify-content-between">
+														<div>
+															<h4>Orson Blair-Casey Blair-Two YO-Active</h4>
+														</div>
+														<div class="trans_col_right_width">
+															<div class="trans_card_days">35 Days</div>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Seat</label>
+															<h5>36-RM-3604-1</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>Date of Birth</label>
+															<p>5/16/2019</p>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Child Name</label>
+															<h5>Orson Blair</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>ELAD</label>
+															<p>5/26/2022</p>
+														</div>
+													</div>
+												</div>
+												<div class="text-center">
+													<button class="btn confirm_btn">MATCH</button>
+												</div>
+											</div>
+
+											<div>
+												<div class="trans_card">
+													<label class="d-block">Opportunity Name</label>
+													<div class="d-flex justify-content-between">
+														<div>
+															<h4>Orson Blair-Casey Blair-Two YO-Active</h4>
+														</div>
+														<div class="trans_col_right_width">
+															<div class="trans_card_days">35 Days</div>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Seat</label>
+															<h5>36-RM-3604-1</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>Date of Birth</label>
+															<p>5/16/2019</p>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Child Name</label>
+															<h5>Orson Blair</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>ELAD</label>
+															<p>5/26/2022</p>
+														</div>
+													</div>
+												</div>
+												<div class="text-center">
+													<button class="btn confirm_btn confirm_btn_disabled">
+														MATCH
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-between">
+											<div>
+												<div class="trans_card mr_5">
+													<label class="d-block">Opportunity Name</label>
+													<div class="d-flex justify-content-between">
+														<div>
+															<h4>Orson Blair-Casey Blair-Two YO-Active</h4>
+														</div>
+														<div class="trans_col_right_width">
+															<div class="trans_card_days">35 Days</div>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Seat</label>
+															<h5>36-RM-3604-1</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>Date of Birth</label>
+															<p>5/16/2019</p>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Child Name</label>
+															<h5>Orson Blair</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>ELAD</label>
+															<p>5/26/2022</p>
+														</div>
+													</div>
+												</div>
+												<div class="text-center">
+													<button class="btn confirm_btn">MATCH</button>
+												</div>
+											</div>
+
+											<div>
+												<div class="trans_card">
+													<label class="d-block">Opportunity Name</label>
+													<div class="d-flex justify-content-between">
+														<div>
+															<h4>Orson Blair-Casey Blair-Two YO-Active</h4>
+														</div>
+														<div class="trans_col_right_width">
+															<div class="trans_card_days">35 Days</div>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Seat</label>
+															<h5>36-RM-3604-1</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>Date of Birth</label>
+															<p>5/16/2019</p>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Child Name</label>
+															<h5>Orson Blair</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>ELAD</label>
+															<p>5/26/2022</p>
+														</div>
+													</div>
+												</div>
+												<div class="text-center">
+													<button class="btn confirm_btn confirm_btn_disabled">
+														MATCH
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 pl_5">
+							<div class="trans_container">
+								<div class="row pl-2">
+									<div class="col-md-12">
+										<h3 class="trans_heading_h2">Classroom Details</h3>
+									</div>
+								</div>
+
+								<div class="row pl-2 pr-2">
+									<div class="col-md-8">
+										<label class="select_label">Centre</label>
+										<div class="select_wrapper">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Select Centre</span>
+												</div>
+												<ul
+													class="select_custom_options"
+													onclick="handleChangeCentreRight(event)"
+												>
+													<li
+														class="select_custom_option"
+														data-value="Day Early Learning at Eastern Star Church"
+													>
+														Day Early Learning at Eastern Star Church
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row pl-2 pr-2 mt-3">
+									<div class="col-md-8">
+										<label class="select_label">Classroom</label>
+										<div class="select_wrapper">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Select Classroom</span>
+												</div>
+												<ul
+													class="select_custom_options"
+													onclick="handleChangeClassroomRight(event)"
+												>
+													<li
+														class="select_custom_option"
+														data-value="Dreamers - 0.0 Infants - RM-3601"
+													>
+														Dreamers - 0.0 Infants - RM-3601
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<label class="select_label">Days</label>
+										<div class="select_wrapper">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Select Days</span>
+												</div>
+												<ul
+													class="select_custom_options"
+													onclick="handleChangeDaysRight(event)"
+												>
+													<li
+														class="select_custom_option"
+														data-value="Next 30 days"
+													>
+														Next 30 days
+													</li>
+													<li
+														class="select_custom_option"
+														data-value="Next 60 days"
+													>
+														Next 60 days
+													</li>
+													<li
+														class="select_custom_option"
+														data-value="Next 90 days"
+													>
+														Next 90 days
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="trans_body">
+									<div id="emptyListRight" class="h-100">
+										<div
+											class="d-flex align-items-center justify-content-center h-100"
+										>
+											<div class="empty_list">
+												<img src="images/empty_state.png" alt="" />
+												<p>You haven't selected anything yet.</p>
+											</div>
+										</div>
+									</div>
+									<div id="dataListRight">
+										<div class="d-flex justify-content-between">
+											<div>
+												<div class="trans_card mr_5">
+													<label class="d-block">Opportunity Name</label>
+													<div class="d-flex justify-content-between">
+														<div>
+															<h4>Orson Blair-Casey Blair-Two YO-Active</h4>
+														</div>
+														<div class="trans_col_right_width">
+															<div class="trans_card_days">35 Days</div>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Seat</label>
+															<h5>36-RM-3604-1</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>Date of Birth</label>
+															<p>5/16/2019</p>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Child Name</label>
+															<h5>Orson Blair</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>ELAD</label>
+															<p>5/26/2022</p>
+														</div>
+													</div>
+												</div>
+												<div class="text-center">
+													<button class="btn confirm_btn">MATCH</button>
+												</div>
+											</div>
+
+											<div>
+												<div class="trans_card">
+													<label class="d-block">Opportunity Name</label>
+													<div class="d-flex justify-content-between">
+														<div>
+															<h4>Orson Blair-Casey Blair-Two YO-Active</h4>
+														</div>
+														<div class="trans_col_right_width">
+															<div class="trans_card_days">35 Days</div>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Seat</label>
+															<h5>36-RM-3604-1</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>Date of Birth</label>
+															<p>5/16/2019</p>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Child Name</label>
+															<h5>Orson Blair</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>ELAD</label>
+															<p>5/26/2022</p>
+														</div>
+													</div>
+												</div>
+												<div class="text-center">
+													<button class="btn confirm_btn confirm_btn_disabled">
+														MATCH
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-between">
+											<div>
+												<div class="trans_card mr_5">
+													<label class="d-block">Opportunity Name</label>
+													<div class="d-flex justify-content-between">
+														<div>
+															<h4>Orson Blair-Casey Blair-Two YO-Active</h4>
+														</div>
+														<div class="trans_col_right_width">
+															<div class="trans_card_days">35 Days</div>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Seat</label>
+															<h5>36-RM-3604-1</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>Date of Birth</label>
+															<p>5/16/2019</p>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Child Name</label>
+															<h5>Orson Blair</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>ELAD</label>
+															<p>5/26/2022</p>
+														</div>
+													</div>
+												</div>
+												<div class="text-center">
+													<button class="btn confirm_btn">MATCH</button>
+												</div>
+											</div>
+
+											<div>
+												<div class="trans_card">
+													<label class="d-block">Opportunity Name</label>
+													<div class="d-flex justify-content-between">
+														<div>
+															<h4>Orson Blair-Casey Blair-Two YO-Active</h4>
+														</div>
+														<div class="trans_col_right_width">
+															<div class="trans_card_days">35 Days</div>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Seat</label>
+															<h5>36-RM-3604-1</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>Date of Birth</label>
+															<p>5/16/2019</p>
+														</div>
+													</div>
+													<div class="d-flex justify-content-between">
+														<div>
+															<label>Child Name</label>
+															<h5>Orson Blair</h5>
+														</div>
+														<div class="trans_col_right_width">
+															<label>ELAD</label>
+															<p>5/26/2022</p>
+														</div>
+													</div>
+												</div>
+												<div class="text-center">
+													<button class="btn confirm_btn confirm_btn_disabled">
+														MATCH
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- main container end -->
+		</div>
+
+		<!-- custom js -->
+		<script src="js/transition.js"></script>
+	</body>
+</html>
