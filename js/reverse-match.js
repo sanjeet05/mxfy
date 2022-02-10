@@ -1,3 +1,43 @@
+// common js - start
+// for custom select options
+for (const dropdown of document.querySelectorAll(".select_wrapper")) {
+	dropdown.addEventListener("click", function () {
+		this.querySelector(".select_container").classList.toggle("open");
+	});
+}
+
+for (const option of document.querySelectorAll(".select_custom_option")) {
+	option.addEventListener("click", function () {
+		if (!this.classList.contains("selected")) {
+			const selectedEle = this.parentNode.querySelector(
+				".select_custom_option.selected"
+			);
+			if (selectedEle) {
+				selectedEle.classList.remove("selected");
+			}
+			this.classList.add("selected");
+
+			this.closest(".select_container")
+				.querySelector(".select__trigger")
+				.classList.add("selected");
+			this.closest(".select_container").querySelector(
+				".select__trigger span"
+			).textContent = this.textContent;
+		}
+	});
+}
+
+document.addEventListener("click", function (e) {
+	for (const select of document.querySelectorAll(".select_container")) {
+		if (!select.contains(e.target)) {
+			select.classList.remove("open");
+		}
+	}
+});
+
+// common js - end
+
+// reverse match - start
 var tableData = [
 	{
 		name: "Isabella Haywood-Jasmine Haywood-Toddler-Active",
@@ -94,24 +134,6 @@ function handleChangeBusinessGroup(event) {
 	createTable();
 }
 
-// onchange of centre
-function handleChangeCentre(event) {
-	// var value = event.target.dataset.value;
-	// console.log(value);
-
-	document.getElementById("emptyList").style.display = "none";
-	createTable();
-}
-
-// onchange of classroom
-function handleChangeClassroom(event) {
-	// var value = event.target.dataset.value;
-	// console.log(value);
-
-	document.getElementById("emptyList").style.display = "none";
-	createTable();
-}
-
 // select a row
 function handleSelectRow(index) {
 	// console.log(index);
@@ -133,38 +155,28 @@ function handleCancelSelectRow() {
 	}
 }
 
-// for custom select options
-for (const dropdown of document.querySelectorAll(".select_wrapper")) {
-	dropdown.addEventListener("click", function () {
-		this.querySelector(".select_container").classList.toggle("open");
-	});
+// reverse match - end
+
+// transition - start
+document.getElementById("dataListLeft").style.display = "none";
+document.getElementById("dataListRight").style.display = "none";
+
+// onchange of centre
+function handleChangeCentreLeft(event) {
+	// var value = event.target.dataset.value;
+	// console.log(value);
+
+	document.getElementById("emptyListLeft").style.display = "none";
+	document.getElementById("dataListLeft").style.display = "block";
 }
 
-for (const option of document.querySelectorAll(".select_custom_option")) {
-	option.addEventListener("click", function () {
-		if (!this.classList.contains("selected")) {
-			const selectedEle = this.parentNode.querySelector(
-				".select_custom_option.selected"
-			);
-			if (selectedEle) {
-				selectedEle.classList.remove("selected");
-			}
-			this.classList.add("selected");
+// onchange of centre
+function handleChangeCentreRight(event) {
+	// var value = event.target.dataset.value;
+	// console.log(value);
 
-			this.closest(".select_container")
-				.querySelector(".select__trigger")
-				.classList.add("selected");
-			this.closest(".select_container").querySelector(
-				".select__trigger span"
-			).textContent = this.textContent;
-		}
-	});
+	document.getElementById("emptyListRight").style.display = "none";
+	document.getElementById("dataListRight").style.display = "block";
 }
 
-document.addEventListener("click", function (e) {
-	for (const select of document.querySelectorAll(".select_container")) {
-		if (!select.contains(e.target)) {
-			select.classList.remove("open");
-		}
-	}
-});
+// transition - end
