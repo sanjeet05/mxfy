@@ -158,8 +158,12 @@ function handleCancelSelectRow() {
 // reverse match - end
 
 // transition - start
-document.getElementById("dataListLeft").style.display = "none";
-document.getElementById("dataListRight").style.display = "none";
+// onload init
+function transitionInit() {
+	console.log("init");
+	document.getElementById("dataListLeft").style.display = "none";
+	document.getElementById("dataListRight").style.display = "none";
+}
 
 // onchange of centre
 function handleChangeCentreLeft(event) {
@@ -180,3 +184,27 @@ function handleChangeCentreRight(event) {
 }
 
 // transition - end
+
+// find-match - start
+const selectedRows = document.querySelectorAll(".row_select");
+
+for (let i = 0; i < selectedRows.length; i++) {
+	selectedRows[i].addEventListener(
+		"click",
+		function () {
+			// multi selection
+			// this.classList.toggle("selected_row");
+
+			// single selection
+			const selectedEle = this.parentNode.querySelector(".selected_row");
+			// console.log("selectedEle", selectedEle);
+			if (selectedEle) {
+				// console.log("removed");
+				selectedEle.classList.remove("selected_row");
+			}
+			this.classList.add("selected_row");
+		},
+		false
+	);
+}
+// find-match - end
