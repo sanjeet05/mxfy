@@ -8,26 +8,6 @@ body {
 }
 
 /* reset bootstrap */
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus {
-	outline: none !important;
-	box-shadow: none !important;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"],
-textarea {
-	outline: none !important;
-	box-shadow: none !important;
-}
-
-.form-control {
-	outline: none !important;
-	box-shadow: none !important;
-}
 .text_decoration_none {
 	text-decoration: none;
 }
@@ -35,6 +15,21 @@ textarea {
 	text-decoration: none;
 }
 /* reset bootstrap end */
+
+/* common css - start */
+.ml_5 {
+	margin-left: 5px !important;
+}
+.mr_5 {
+	margin-right: 5px !important;
+}
+
+.pl_5 {
+	padding-left: 5px !important;
+}
+.pr_5 {
+	padding-right: 5px !important;
+}
 
 .templete_layout {
 	display: flex;
@@ -53,8 +48,7 @@ textarea {
 }
 .templete_layout_item_content {
 	background: #f6f6f6;
-	order: 2;
-	/* padding: 1rem; */
+	order: 2;	
 	width: 100%;
 }
 
@@ -125,40 +119,13 @@ textarea {
 	color: #475765;
 }
 
-.select_label {
-	font-family: "IBMPlexSans";
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 18px;
-	color: #475765;
-	margin-bottom: 0px;
-}
-
 .main_body {
 	border: 1px solid #e4e4e4;
 	box-sizing: border-box;
 	border-radius: 8px;
-	height: 64vh;
+	height: 65vh;
 	overflow-y: scroll;
 	margin-top: 20px;
-}
-
-.empty_list img {
-	width: 322px;
-	height: 172px;
-}
-.empty_list p {
-	font-family: "IBMPlexSans";
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 18px;
-	text-align: center;
-	color: #475765;
-}
-
-.bottom_container {
-	margin-top: 15px;
 }
 
 .cancel_btn {
@@ -195,6 +162,34 @@ textarea {
 .confirm_btn_active {
 	background: #ed7d31;
 	pointer-events: initial;
+}
+
+/* common css - end */
+
+/* reverse-match - start */
+.select_label {
+	font-family: "IBMPlexSans";
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #475765;
+	margin-bottom: 0px;
+}
+.empty_list img {
+	width: 322px;
+	height: 172px;
+}
+.empty_list p {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	color: #475765;
+}
+.bottom_container {
+	margin-top: 15px;
 }
 
 .data_table {
@@ -250,17 +245,13 @@ textarea {
 .selected_row td:not(:nth-child(1)) {
 	background: rgba(92, 155, 213, 0.1) !important;
 }
-
-.selected_row .check_box_row {
-	background: red;
-}
+/* reverse-match - end */
 
 /* for custom select options - start */
 .select_wrapper {
 	position: relative;
 	user-select: none;
-	width: 100%;
-	margin-top: 7px;
+	width: 100%;	
 }
 .select_container {
 	position: relative;
@@ -339,3 +330,105 @@ textarea {
 	background: #ededed;
 }
 /* for custom select options - end */
+
+/* transition - start */
+.trans_container {
+	border: 1px solid #e4e4e4;
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+.trans_heading_h2 {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+	color: #475765;
+	margin: 0px;
+	padding-bottom: 16px;
+	padding-top: 11px;
+}
+
+.trans_body {
+	height: 58vh;
+	overflow-y: scroll;
+	margin-top: 20px;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+.trans_body::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
+.trans_card {
+	background: #ffffff;
+	border: 1px solid #ededed;
+	box-sizing: border-box;
+	border-radius: 8px;
+	margin: 8px 0px;
+	padding: 16px 16px 16px 16px;
+	min-width: 250px;
+}
+
+.trans_card label {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 13px;
+	color: #475765;
+	margin: 0px;
+}
+
+.trans_card h4 {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #2a6aa6;
+	margin: 0px;
+}
+
+.trans_card h5 {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #2a6aa6;
+	margin: 0px;
+}
+
+.trans_card p {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #2a6aa6;
+	margin: 0px;
+}
+.trans_col_right_width {
+	min-width: 80px;
+	margin-left: 5px;
+	text-align: right;
+}
+
+.trans_card_days {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #ffffff;
+	background: #2a6aa6;
+	width: 66px;
+	height: 26px;
+	border-radius: 13px;
+	text-align: center;
+	display: inline-block;
+}
+/* transition - end */
