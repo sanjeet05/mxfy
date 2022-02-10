@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="lib/bootstrap-4.0.0-dist/css/bootstrap.min.css"
+		/>
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="css/find-match.css" />
+
+		<!-- fonts -->
+		<link href="lib/fonts.css" rel="stylesheet" />
+
+		<title>Maxify Digital - Find Match</title>
+	</head>
+	<body>
+		<div class="template_body">
+			<div class="d-flex flex-column justify-content-between h-100">
+				<section>
+					<div class="d-flex justify-content-between">
+						<div>
+							<h2 class="heading_h2">Select Enrollments</h2>
+						</div>
+						<div>
+							<img src="/images/close_round_light.svg" alt="" />
+						</div>
+					</div>
+
+					<div class="d-flex justify-content-center">
+						<div class="d-flex mt-3 mb-3">
+							<div class="progress_container progress_done">
+								<div class="progress_circle">01</div>
+								<div class="progress_line"></div>
+								<div class="progress_text">Select Business Group</div>
+							</div>
+							<div class="progress_container progress_done">
+								<div class="progress_circle">02</div>
+								<div class="progress_line"></div>
+								<div class="progress_text">Select Centre & Classrooms</div>
+							</div>
+							<div class="progress_container progress_current">
+								<div class="progress_circle">03</div>
+								<div class="progress_text">Select Enrollments</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 class="heading_h3 mb-0">Select Enrollment from the following:</h3>
+
+					<table class="table data_table_2">
+						<thead>
+							<tr>
+								<th style="width: 0px"></th>
+								<th scope="col">ENROLLMENT NUMBER</th>
+								<th scope="col">MATCH SCORE</th>
+								<th scope="col">AVAILABLE START DATE</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="row_select">
+								<td class="check_box_row">
+									<div class="checked_image"></div>
+								</td>
+								<td class="check_box_row_1">Enroll-000554</td>
+								<td>100</td>
+								<td>5/15/2020</td>
+							</tr>
+							<tr class="row_select">
+								<td class="check_box_row">
+									<div class="checked_image"></div>
+								</td>
+								<td class="check_box_row_1">Enroll-000551</td>
+								<td>100</td>
+								<td>5/15/2020</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<div class="d-flex justify-content-end">
+						<a href="/find-match-2.html">
+							<button class="btn reset_btn cancel_btn">CANCEL</button>
+						</a>
+						<button
+							id="confirmSelection"
+							class="btn ml-3 reset_btn confirm_btn confirm_btn_disabled"
+						>
+							CONFIRM
+						</button>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<!-- custom js -->
+		<script src="js/find-match.js"></script>
+	</body>
+</html>
