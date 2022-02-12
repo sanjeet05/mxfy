@@ -208,3 +208,19 @@ for (let i = 0; i < selectedRows.length; i++) {
 	);
 }
 // find-match - end
+
+// seat-distribution -start
+function seatDistributionInit() {
+	console.log("init");
+	document.getElementById("dataTable").style.display = "none";
+}
+// onchange of seat distribution
+function handleChangeForSeatDistribution(event) {
+	var value = event.target.dataset.value;
+	console.log(value);
+
+	document.getElementById("emptyList").style.display = "none";
+	document.getElementById("dataTable").style.display = "block";
+}
+
+// seat-distribution -end
