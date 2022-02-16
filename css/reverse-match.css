@@ -786,7 +786,8 @@ body {
 	border: 1px solid #dbdbdb;
 	box-sizing: border-box;
 	border-radius: 16px;
-	padding: 16px;
+	padding: 10px;
+	width: 480px;
 }
 
 .sd_card_bottom {
@@ -794,7 +795,7 @@ body {
 	border: 1px solid #e4e4e4;
 	box-sizing: border-box;
 	border-radius: 16px;
-	padding: 10px;
+	padding: 0px 8px;
 }
 .sd_card_bottom_table {
 	font-family: "IBMPlexSans";
@@ -846,18 +847,20 @@ body {
 }
 
 .sd_card_top {
-	margin-bottom: 16px;
-	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	justify-content: space-between;
 }
 
 .sd_card_top_item_2 {
 	width: 330px;
-	margin-left: 60px;
+	margin-right: 35px;
+	justify-content: end;
 }
 
 .sd_progress_container {
 	position: relative;
-	height: 90px;
+	height: 75px;
 }
 
 .sd_progress_image img {
@@ -869,7 +872,7 @@ body {
 	margin-left: -20px;
 }
 .sd_progress_image_red {
-	margin-top: 35px;
+	margin-top: 25px;
 }
 .sd_progress_text {
 	width: 70px;
@@ -888,12 +891,19 @@ body {
 }
 
 .sd_progress_line {
-	width: 40px;
+	width: 30px;
 	border: 1px dashed #a5a5a5;
 	height: 0px;
-	margin-left: 60px;
-	margin-right: 40px;
+	margin-left: 50px;
+	margin-right: 35px;
 	margin-top: 10px;
+}
+
+.sd_row {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 10px;
+	row-gap: 10px;
 }
 
 /* seat-distribution - end */
