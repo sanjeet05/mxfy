@@ -899,7 +899,13 @@ body {
 	margin-top: 10px;
 }
 
-.sd_row {
+.sd_row_2 {
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 10px;
+	row-gap: 10px;
+}
+.sd_row_3 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 10px;
