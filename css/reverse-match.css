@@ -59,6 +59,11 @@ body {
 	padding-right: 10px !important;
 }
 
+.ibm_plex_sans {
+	font-family: "IBMPlexSans";
+	font-weight: normal;
+}
+
 .templete_layout {
 	display: flex;
 	flex-direction: row;
@@ -276,6 +281,10 @@ body {
 .check_box_row {
 	background: transparent !important;
 	vertical-align: middle !important;
+}
+.check_box_row img {
+	width: 20px;
+	height: 20px;
 }
 
 .selected_row td:not(:nth-child(1)) {
@@ -590,7 +599,7 @@ body {
 	padding: 10px 15px;
 }
 .row_2:hover {
-	background: rgba(92, 155, 213, 0.1);
+	/* background: rgba(92, 155, 213, 0.1); */
 	cursor: pointer;
 }
 .row_2_heading {
@@ -699,6 +708,16 @@ body {
 }
 .selected_row .checked_image {
 	background-image: url("../images/check_ring_round_light_selected.svg");
+}
+
+.find_match_scroll {
+	height: 320px;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+.find_match_scroll::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
 }
 
 /* find-match end */

@@ -78,12 +78,12 @@ function createTable() {
 	var myTable = `<table class="table data_table"> 
 			<thead> 
 				<tr> 
-					<th scope="col"></th> 
+					<th style="width: 0px"></th>
 					<th scope="col">OPPORTUNITY NAME</th> 
 					<th scope="col">DESIRED START DATE</th> 
 					<th scope="col">PRIMARY CENTER</th> 
 					<th scope="col">SECONDARY CENTER</th> 
-					<th scope="col">PRIORITY POINTS</th> 
+					<th scope="col">PRIORITY POINTS</th> 					
 				</tr> 
 			</thead> 
 		<tbody>`;
