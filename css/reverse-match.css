@@ -21,6 +21,33 @@ body {
 .text_decoration_none:hover {
 	text-decoration: none;
 }
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	padding: 6px 12px;
+}
+.table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1rem;
+	background-color: transparent;
+}
+.table thead th {
+	vertical-align: bottom;
+	padding: 0.75rem;
+	text-align: left;
+}
+.table td {
+	padding: 0.75rem;
+	vertical-align: top;
+	text-align: left;
+}
 /* reset bootstrap end */
 
 /* common css - start */
@@ -150,6 +177,8 @@ body {
 	line-height: 47px;
 	letter-spacing: -0.02em;
 	color: #475765;
+	margin: 0px;
+	margin-bottom: 8px;
 }
 .heading_h3 {
 	font-family: "IBMPlexSans";
@@ -158,6 +187,8 @@ body {
 	font-size: 14px;
 	line-height: 18px;
 	color: #475765;
+	margin: 0px;
+	margin-bottom: 8px;
 }
 
 .main_body {
@@ -711,7 +742,7 @@ body {
 }
 
 .find_match_scroll {
-	height: 320px;
+	height: 390px;
 	overflow-y: scroll;
 	-ms-overflow-style: none; /* Internet Explorer 10+ */
 	scrollbar-width: none; /* Firefox */
