@@ -16,11 +16,15 @@ body {
 }
 
 .text_decoration_none {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 .text_decoration_none:hover {
-	text-decoration: none;
+	text-decoration: none !important;
 }
+.bs-scoped * {
+	font-family: "IBMPlexSans";	
+}
+
 /* reset bootstrap end */
 
 /* common css - start */
@@ -94,7 +98,7 @@ body {
 .left_menu {
 	list-style-type: none;
 	padding: 0px;
-	margin-top: 40px;
+	margin-top: 40px !important;
 }
 .left_menu li {
 	text-align: center;
@@ -144,20 +148,20 @@ body {
 }
 
 .heading_h2 {
-	font-family: "IBMPlexSans";
-	font-weight: 500;
-	font-size: 36px;
-	line-height: 47px;
-	letter-spacing: -0.02em;
-	color: #475765;
+	font-family: "IBMPlexSans" !important;
+	font-weight: 500 !important;
+	font-size: 36px !important;
+	line-height: 47px !important;
+	letter-spacing: -0.02em !important;
+	color: #475765 !important;
 }
 .heading_h3 {
-	font-family: "IBMPlexSans";
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 18px;
-	color: #475765;
+	font-family: "IBMPlexSans" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 14px !important;
+	line-height: 18px !important;
+	color: #475765 !important;
 }
 
 .main_body {
@@ -170,39 +174,39 @@ body {
 }
 
 .cancel_btn {
-	background: #ededed;
-	border-radius: 8px;
-	font-family: "IBMPlexSans";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	color: #475765;
-	padding-left: 16px;
-	padding-right: 16px;
-	height: 36px;
+	background: #ededed !important;
+	border-radius: 8px !important;
+	font-family: "IBMPlexSans" !important;
+	font-style: normal !important;
+	font-weight: 500 !important;
+	font-size: 14px !important;
+	color: #475765 !important;
+	padding-left: 16px !important;
+	padding-right: 16px !important;
+	height: 36px !important;
 }
 
 .confirm_btn {
-	background: #ed7d31;
-	border-radius: 8px;
-	font-family: "IBMPlexSans";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	color: #ffffff;
-	padding-left: 16px;
-	padding-right: 16px;
-	height: 36px;
+	background: #ed7d31 !important;
+	border-radius: 8px !important;
+	font-family: "IBMPlexSans" !important;
+	font-style: normal !important;
+	font-weight: 500 !important;
+	font-size: 14px !important;
+	color: #ffffff !important;
+	padding-left: 16px !important;
+	padding-right: 16px !important;
+	height: 36px !important;
 }
 
 .confirm_btn_disabled {
-	background: #a5a5a5;
-	pointer-events: none;
+	background: #a5a5a5 !important;
+	pointer-events: none !important;
 }
 
 .confirm_btn_active {
-	background: #ed7d31;
-	pointer-events: initial;
+	background: #ed7d31 !important;
+	pointer-events: initial !important;
 }
 
 /* common css - end */
@@ -214,7 +218,7 @@ body {
 	font-size: 14px;
 	line-height: 18px;
 	color: #475765;
-	margin-bottom: 0px;
+	margin-bottom: 0px !important;
 }
 .empty_list img {
 	width: 322px;
@@ -240,49 +244,57 @@ body {
 	border-collapse: separate;
 	border-spacing: 0 10px;
 }
-
+.bs-scoped .data_table {	
+	border-collapse: separate !important;
+}
 .data_table thead tr th {
-	font-family: "IBMPlexSans";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 18px;
-	color: #475765;
-	white-space: nowrap;
-	border: 0px;
+	font-family: "IBMPlexSans" !important;
+	font-style: normal !important;
+	font-weight: 500 !important;
+	font-size: 14px !important;
+	line-height: 18px !important;
+	color: #475765 !important;
+	white-space: nowrap !important;
+	border: 0px !important;
+}
+.bs-scoped .data_table thead tr th {	
+	background: inherit !important;
 }
 
 .data_table tbody tr {
-	border: 0px;
-	cursor: pointer;
+	border: 0px !important;
+	cursor: pointer !important;
 }
 
 .data_table tbody tr td {
-	border: 0px;
-	font-family: "IBMPlexSans";
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 21px;
-	color: #475765;
-	background: #ededed;
+	border: 0px !important;
+	font-family: "IBMPlexSans" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 16px !important;
+	line-height: 21px !important;
+	color: #475765 !important;
+	background: #ededed !important;
+}
+.bs-scoped .data_table tbody tr td {	
+	background: #ededed !important;
 }
 .data_table tbody tr td:nth-child(2) {
 	/* border-radius: 8px; */
-	border-top-left-radius: 8px;
-	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px !important;
+	border-bottom-left-radius: 8px !important;
 }
 .data_table tbody tr td:nth-last-child(1) {
 	/* border-radius: 8px; */
-	border-top-right-radius: 8px;
-	border-bottom-right-radius: 8px;
+	border-top-right-radius: 8px !important;
+	border-bottom-right-radius: 8px !important;
 }
 
-.check_box_row {
+.bs-scoped .data_table .check_box_row {
 	background: transparent !important;
 	vertical-align: middle !important;
 }
-.check_box_row img {
+.bs-scoped .data_table .check_box_row img {
 	width: 20px;
 	height: 20px;
 }
@@ -340,7 +352,7 @@ body {
 	pointer-events: none;
 	z-index: 2;
 	list-style-type: none;
-	margin: 0px;
+	margin: 0px !important;
 	background: #ffffff;
 	box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.12);
 	border-radius: 8px;
@@ -385,15 +397,15 @@ body {
 }
 
 .trans_heading_h2 {
-	font-family: "IBMPlexSans";
-	font-style: normal;
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 26px;
-	color: #475765;
-	margin: 0px;
-	padding-bottom: 16px;
-	padding-top: 11px;
+	font-family: "IBMPlexSans" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 20px !important;
+	line-height: 26px !important;
+	color: #475765 !important;
+	margin: 0px !important;
+	padding-bottom: 16px !important;
+	padding-top: 11px !important;
 }
 
 .trans_body {
@@ -489,7 +501,7 @@ body {
 	margin-top: 20px;
 	background: #ffffff;
 	padding: 32px;
-	font-family: "IBMPlexSans";
+	font-family: "IBMPlexSans" !important;
 }
 
 .row_1 {
@@ -619,68 +631,78 @@ body {
 }
 
 .primary_btn {
-	height: 34px;
-	background: #70ad47;
-	border-radius: 100px;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 18px;
-	color: #ffffff;
+	height: 34px !important;
+	background: #70ad47 !important;
+	border-radius: 100px !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 14px !important;
+	line-height: 18px !important;
+	color: #ffffff !important;
 }
 
 .secondary_btn {
-	height: 34px;
-	background: #ed7d31;
-	border-radius: 100px;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 18px;
-	color: #ffffff;
+	height: 34px !important;
+	background: #ed7d31 !important;
+	border-radius: 100px !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 14px !important;
+	line-height: 18px !important;
+	color: #ffffff !important;
 }
 
 .data_table_2 {
-	font-family: "IBMPlexSans";
-	border-collapse: separate;
-	border-spacing: 0 10px;
+	font-family: "IBMPlexSans" !important;
+	border-collapse: separate !important;
+	border-spacing: 0 10px !important;
+}
+
+.bs-scoped .data_table_2 {	
+	border-collapse: separate !important;
 }
 
 .data_table_2 thead tr th {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 18px;
-	color: #475765;
-	white-space: nowrap;
-	border: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	font-style: normal !important;
+	font-weight: 500 !important;
+	font-size: 14px !important;
+	line-height: 18px !important;
+	color: #475765 !important;
+	white-space: nowrap !important;
+	border: 0px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
 }
 
 .data_table_2 tbody tr {
-	border: 0px;
-	cursor: pointer;
+	border: 0px !important;
+	cursor: pointer !important;
 }
 
 .data_table_2 tbody tr td {
-	border: 0px;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 21px;
-	color: #475765;
-	background: #ededed;
-}
+	border: 0px !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 16px !important;
+	line-height: 21px !important;
+	color: #475765 !important;
+	background: #ededed !important;
+} 
+
+.bs-scoped .data_table_2 tbody tr td {	
+	background: #ededed !important;
+} 
+
+
 .data_table_2 tbody tr td:nth-child(2) {
-	border-top-left-radius: 8px;
-	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px !important;
+	border-bottom-left-radius: 8px !important;
 }
 .data_table_2 tbody tr td:nth-last-child(1) {
-	border-top-right-radius: 8px;
-	border-bottom-right-radius: 8px;
+	border-top-right-radius: 8px !important;
+	border-bottom-right-radius: 8px !important;
 }
-.data_table_2 .check_box_row {
+.bs-scoped .data_table_2 .check_box_row {
 	background: transparent !important;
 	vertical-align: middle !important;
 	padding: 0px;
@@ -740,7 +762,7 @@ body {
 	display: inline-block;
 	width: 38px;
 	height: 20px;
-	margin: 0px;
+	margin: 0px !important;
 }
 
 .switch .switch_input {
@@ -823,36 +845,42 @@ body {
 	margin: 0px;
 }
 
+.bs-scoped .sd_card_bottom_table {	
+	border-collapse: separate !important;
+	border-spacing: 0 10px !important;
+	margin: 0px !important;
+}
+
 .sd_card_bottom_table tbody tr {
-	border: 0px;
+	border: 0px !important;
 }
 .sd_card_bottom_table tbody tr td {
-	border: 0px;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	line-height: 16px;
-	padding: 0px 5px;
+	border: 0px !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 12px !important;
+	line-height: 16px !important;
+	padding: 0px 5px !important;
 }
 .sd_card_bottom_table tbody tr .col_1 {
-	color: #475765;
-	width: 125px;
+	color: #475765 !important;
+	width: 125px !important;
 }
 .sd_card_bottom_table tbody tr .col_2 {
-	color: #2a6aa6;
-	vertical-align: bottom;
+	color: #2a6aa6 !important;
+	vertical-align: bottom !important;
 }
 .sd_card_bottom_table tbody tr .col_3 {
-	color: #475765;
-	vertical-align: bottom;
+	color: #475765 !important;
+	vertical-align: bottom !important;
 }
 .sd_card_bottom_table tbody tr .col_4 {
-	color: #2a6aa6;
-	vertical-align: bottom;
+	color: #2a6aa6 !important;
+	vertical-align: bottom !important;
 }
 .sd_card_bottom_table tbody tr .col_active {
-	font-weight: 500;
-	color: #70ad47;
+	font-weight: 500 !important;
+	color: #70ad47 !important;
 }
 
 .sd_card_top_item_1 {
