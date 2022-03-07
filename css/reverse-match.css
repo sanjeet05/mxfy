@@ -22,7 +22,7 @@
 	text-decoration: none !important;
 }
 .bs-scoped * {
-	font-family: "IBMPlexSans";	
+	font-family: "IBMPlexSans";
 }
 
 /* reset bootstrap end */
@@ -244,7 +244,7 @@
 	border-collapse: separate;
 	border-spacing: 0 10px;
 }
-.bs-scoped .data_table {	
+.bs-scoped .data_table {
 	border-collapse: separate !important;
 }
 .data_table thead tr th {
@@ -257,7 +257,7 @@
 	white-space: nowrap !important;
 	border: 0px !important;
 }
-.bs-scoped .data_table thead tr th {	
+.bs-scoped .data_table thead tr th {
 	background: inherit !important;
 }
 
@@ -276,7 +276,7 @@
 	color: #475765 !important;
 	background: #ededed !important;
 }
-.bs-scoped .data_table tbody tr td {	
+.bs-scoped .data_table tbody tr td {
 	background: #ededed !important;
 }
 .data_table tbody tr td:nth-child(2) {
@@ -658,7 +658,7 @@
 	border-spacing: 0 10px !important;
 }
 
-.bs-scoped .data_table_2 {	
+.bs-scoped .data_table_2 {
 	border-collapse: separate !important;
 }
 
@@ -687,12 +687,11 @@
 	line-height: 21px !important;
 	color: #475765 !important;
 	background: #ededed !important;
-} 
+}
 
-.bs-scoped .data_table_2 tbody tr td {	
+.bs-scoped .data_table_2 tbody tr td {
 	background: #ededed !important;
-} 
-
+}
 
 .data_table_2 tbody tr td:nth-child(2) {
 	border-top-left-radius: 8px !important;
@@ -828,7 +827,7 @@
 	box-sizing: border-box;
 	border-radius: 16px;
 	padding: 10px;
-	width: 480px;
+	width: 490px;
 }
 
 .sd_card_bottom {
@@ -845,7 +844,7 @@
 	margin: 0px;
 }
 
-.bs-scoped .sd_card_bottom_table {	
+.bs-scoped .sd_card_bottom_table {
 	border-collapse: separate !important;
 	border-spacing: 0 10px !important;
 	margin: 0px !important;
@@ -870,6 +869,12 @@
 	color: #2a6aa6 !important;
 	vertical-align: bottom !important;
 }
+.sd_card_bottom_table tbody tr .col_2 div {
+	text-overflow: ellipsis;
+	width: 80px;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
 .sd_card_bottom_table tbody tr .col_3 {
 	color: #475765 !important;
 	vertical-align: bottom !important;
@@ -877,6 +882,12 @@
 .sd_card_bottom_table tbody tr .col_4 {
 	color: #2a6aa6 !important;
 	vertical-align: bottom !important;
+}
+.sd_card_bottom_table tbody tr .col_4 div {
+	text-overflow: ellipsis;
+	width: 90px;
+	overflow-y: hidden;
+	white-space: nowrap;
 }
 .sd_card_bottom_table tbody tr .col_active {
 	font-weight: 500 !important;
@@ -891,6 +902,10 @@
 	line-height: 31px;
 	color: #475765;
 	align-self: center;
+	text-overflow: ellipsis;
+	width: 160px;
+	overflow-y: hidden;
+	white-space: nowrap;
 }
 
 .sd_card_top {
@@ -944,6 +959,11 @@
 	margin-left: 50px;
 	margin-right: 35px;
 	margin-top: 10px;
+}
+
+.sd_progress_line_last {
+	visibility: hidden;
+	margin-top: 12px;
 }
 
 .sd_row_2 {
