@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="lib/bootstrap-4.6.1-scoped/bootstrap.min.css"
+		/>
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="css/reverse-match.css" />
+
+		<!-- fonts -->
+		<link href="lib/fonts.css" rel="stylesheet" />
+
+		<title>Maxify Digital - Transfer Request</title>
+	</head>
+	<body>
+		<div class="transfer_req_body bs-scoped">
+			<div class="d-flex flex-column h-100">
+				<h2 class="transfer_req_heading_h2">Transfer Request</h2>
+				<div class="d-flex justify-content-between">
+					<div class="transfer_req_reason">Reason for Transfer?</div>
+				</div>
+				<div class="d-flex align-items-center switch_container_2">
+					<label class="switch mr-2">
+						<input class="switch_input" type="checkbox" />
+						<span class="switch_slider"></span>
+					</label>
+					<div class="switch_text">EHS Age Out</div>
+				</div>
+				<div class="d-flex align-items-center switch_container_2">
+					<label class="switch mr-2">
+						<input class="switch_input" type="checkbox" />
+						<span class="switch_slider"></span>
+					</label>
+					<div class="switch_text">
+						Location no longer Convenient to Guardian
+					</div>
+				</div>
+				<div class="d-flex align-items-center switch_container_2">
+					<label class="switch mr-2">
+						<input class="switch_input" type="checkbox" />
+						<span class="switch_slider"></span>
+					</label>
+					<div class="switch_text">Getting Siblings Together</div>
+				</div>
+
+				<div class="d-flex justify-content-end mt-3">
+					<a href="/transition.html">
+						<button class="btn cancel_btn reset_btn">
+							<span class="arrow_left"></span>
+							<span class="ml-2">BACK</span>
+						</button>
+					</a>
+					<a href="/transfer-req-2.html">
+						<button id="confirmSelection" class="btn ml-3 reset_btn confirm_btn">
+							<span class="mr-2">NEXT</span>
+							<span class="arrow_right"></span>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- custom js -->
+		<script src="js/reverse-match.js"></script>
+	</body>
+</html>

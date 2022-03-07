@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="lib/bootstrap-4.6.1-scoped/bootstrap.min.css"
+		/>
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="css/reverse-match.css" />
+
+		<!-- fonts -->
+		<link href="lib/fonts.css" rel="stylesheet" />
+
+		<title>Maxify Digital - Transfer Request</title>
+	</head>
+	<body>
+		<div class="transfer_req_body bs-scoped">
+			<div class="d-flex flex-column h-100">
+				<h2 class="transfer_req_heading_h2">Transfer Request</h2>
+
+				<div class="d-flex flex-column mt-3">
+					<label class="select_label">Proposed Date of Transfer</label>
+					<input type="date" class="date_input" placeholder="Select Date"/>
+					<!-- <div class="select_wrapper">
+						<div class="select_container">
+							<div class="select__trigger bg_white">
+								<span>Select Date</span>
+							</div>
+							<ul class="select_custom_options">
+								<li
+									class="select_custom_option"
+									data-value="Day Early Learning at Eastern Star Church"
+								>
+									Day Early Learning at Eastern Star Church
+								</li>
+							</ul>
+						</div>
+					</div> -->
+				</div>
+				<div class="d-flex flex-column mt-2 pt-1">
+					<label class="select_label">Centre</label>
+					<div class="select_wrapper">
+						<div class="select_container">
+							<div class="select__trigger bg_white">
+								<span>Select Centre</span>
+							</div>
+							<ul class="select_custom_options">
+								<li
+									class="select_custom_option"
+									data-value="Day Early Learning at Eastern Star Church"
+								>
+									Day Early Learning at Eastern Star Church
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="d-flex justify-content-end mt-4">
+					<a href="/transfer-req-1.html">
+						<button class="btn cancel_btn reset_btn">
+							<span class="arrow_left"></span>
+							<span class="ml-2">BACK</span>
+						</button>
+					</a>
+					<a href="/transfer-req-3.html">
+						<button id="confirmSelection" class="btn ml-3 reset_btn confirm_btn">
+							<span class="mr-2">NEXT</span>
+							<span class="arrow_right"></span>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- custom js -->
+		<script src="js/reverse-match.js"></script>
+	</body>
+</html>
