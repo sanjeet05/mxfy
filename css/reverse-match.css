@@ -488,6 +488,24 @@
 	text-align: center;
 	display: inline-block;
 }
+
+.trans_shorts img {
+	height: 12px;
+	cursor: pointer;
+	width: 16px;
+}
+.trans_shorts .rotate_icon {
+	-moz-transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+.trans_shorts .rotate_icon.down {
+	-ms-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
 /* transition - end */
 
 /* find-match start */

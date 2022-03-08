@@ -183,6 +183,17 @@ function handleChangeCentreRight(event) {
 	document.getElementById("dataListRight").style.display = "block";
 }
 
+const selectedShortIcons = document.querySelectorAll(".rotate_icon");
+for (let i = 0; i < selectedShortIcons.length; i++) {
+	selectedShortIcons[i].addEventListener(
+		"click",
+		function () {
+			this.classList.toggle("down");
+		},
+		false
+	);
+}
+
 // transition - end
 
 // find-match - start
