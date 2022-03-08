@@ -1065,13 +1065,38 @@
 	height: 520px;
 	overflow-y: scroll;
 	-ms-overflow-style: none; /* Internet Explorer 10+ */
-	scrollbar-width: none; /* Firefox */	
+	scrollbar-width: none; /* Firefox */
 	padding: 5px 20px;
 	border: 1px solid #e4e4e4;
 	border-radius: 8px;
 }
 .transfer_req_scroll::-webkit-scrollbar {
 	display: none; /* Safari and Chrome */
+}
+
+.transfer_req_msg_body {
+	max-width: 500px;
+	margin: auto;
+}
+.transfer_success_msg {
+	background: #ffffff;
+	border: 2px solid #70ad47;
+	box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.12);
+	border-radius: 16px;
+	padding: 16px;
+	width: 420px;
+}
+.transfer_success_msg img {
+	width: 24px;
+	height: auto;
+}
+.transfer_success_msg p {
+	font-family: "IBMPlexSans";
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	color: #70ad47;
+	margin: 0px 12px;
 }
 
 /* transfer-req - end */
