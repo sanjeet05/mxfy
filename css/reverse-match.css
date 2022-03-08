@@ -872,7 +872,7 @@
 .sd_card_bottom_table tbody tr .col_2 div {
 	text-overflow: ellipsis;
 	width: 80px;
-	overflow-y: hidden;
+	overflow: hidden;
 	white-space: nowrap;
 }
 .sd_card_bottom_table tbody tr .col_3 {
@@ -886,7 +886,7 @@
 .sd_card_bottom_table tbody tr .col_4 div {
 	text-overflow: ellipsis;
 	width: 90px;
-	overflow-y: hidden;
+	overflow: hidden;
 	white-space: nowrap;
 }
 .sd_card_bottom_table tbody tr .col_active {
@@ -904,7 +904,7 @@
 	align-self: center;
 	text-overflow: ellipsis;
 	width: 160px;
-	overflow-y: hidden;
+	overflow: hidden;
 	white-space: nowrap;
 }
 
