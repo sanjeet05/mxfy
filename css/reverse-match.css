@@ -290,6 +290,10 @@
 	border-bottom-right-radius: 8px !important;
 }
 
+.data_table .selected_row td:not(:nth-child(1)) {
+	background: rgba(92, 155, 213, 0.1) !important;
+}
+
 .bs-scoped .data_table .check_box_row {
 	background: transparent !important;
 	vertical-align: middle !important;
@@ -298,6 +302,7 @@
 	width: 20px;
 	height: 20px;
 }
+
 
 .selected_row td:not(:nth-child(1)) {
 	background: rgba(92, 155, 213, 0.1) !important;
