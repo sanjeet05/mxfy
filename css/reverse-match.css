@@ -303,7 +303,6 @@
 	height: 20px;
 }
 
-
 .selected_row td:not(:nth-child(1)) {
 	background: rgba(92, 155, 213, 0.1) !important;
 }
@@ -338,12 +337,14 @@
 .select__trigger.selected {
 	color: #475765;
 }
-.select__trigger::after {
-	content: "▾";
+.select__trigger::after {	
+	content: "";
 	position: absolute;
-	top: 0;
-	line-height: 28px;
-	right: 4px;
+	top: 15px;	
+	right: 4px;	
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #999;
 }
 .select_custom_options {
 	position: absolute;
@@ -513,6 +514,7 @@
 	height: 12px;
 	cursor: pointer;
 	width: 16px;
+	opacity: 0.6;
 }
 .trans_shorts .rotate_icon {
 	-moz-transition: all 0.5s linear;
@@ -971,7 +973,7 @@
 	margin-top: -16px;
 	margin-left: -20px;
 }
-.sd_progress_image_red {	
+.sd_progress_image_red {
 	position: absolute;
 	top: 60px;
 	left: 0;
