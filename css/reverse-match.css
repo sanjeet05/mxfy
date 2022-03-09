@@ -489,6 +489,21 @@
 	display: inline-block;
 }
 
+.trans_shorts {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.trans_shorts div {
+	font-family: "IBMPlexSans";
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #475765;
+	margin-bottom: 0px;
+	display: inline-block;
+}
+
 .trans_shorts img {
 	height: 12px;
 	cursor: pointer;
