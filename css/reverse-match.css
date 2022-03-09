@@ -971,8 +971,10 @@
 	margin-top: -16px;
 	margin-left: -20px;
 }
-.sd_progress_image_red {
-	margin-top: 25px;
+.sd_progress_image_red {	
+	position: absolute;
+	top: 60px;
+	left: 0;
 }
 .sd_progress_text {
 	width: 70px;
