@@ -183,6 +183,21 @@ function handleChangeCentreRight(event) {
 	document.getElementById("dataListRight").style.display = "block";
 }
 
+const selectedShortIcons = document.querySelectorAll(".trans_shorts");
+for (let i = 0; i < selectedShortIcons.length; i++) {
+	selectedShortIcons[i].addEventListener(
+		"click",
+		function () {
+			// this.classList.toggle("down");
+			const selectedEle = this.parentNode.querySelector(".rotate_icon");
+			if (selectedEle) {
+				selectedEle.classList.toggle("down");
+			}
+		},
+		false
+	);
+}
+
 // transition - end
 
 // find-match - start
