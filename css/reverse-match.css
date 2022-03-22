@@ -340,11 +340,11 @@
 .select__trigger.selected {
 	color: #475765;
 }
-.select__trigger::after {	
+.select__trigger::after {
 	content: "";
 	position: absolute;
-	top: 15px;	
-	right: 4px;	
+	top: 15px;
+	right: 4px;
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
 	border-top: 6px solid #999;
@@ -366,6 +366,13 @@
 	box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.12);
 	border-radius: 8px;
 	padding: 3px 0px;
+	max-height: 300px;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+.select_custom_options::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
 }
 .select_container.open .select_custom_options {
 	opacity: 1;
@@ -912,7 +919,7 @@
 	color: #2a6aa6 !important;
 	vertical-align: bottom !important;
 }
-.sd_card_bottom_table tbody tr .col_2 div {	
+.sd_card_bottom_table tbody tr .col_2 div {
 	text-overflow: ellipsis;
 	width: 80px;
 	overflow: hidden;
@@ -926,7 +933,7 @@
 	color: #2a6aa6 !important;
 	vertical-align: bottom !important;
 }
-.sd_card_bottom_table tbody tr .col_4 div {	
+.sd_card_bottom_table tbody tr .col_4 div {
 	text-overflow: ellipsis;
 	width: 90px;
 	overflow: hidden;
@@ -1139,6 +1146,25 @@
 	line-height: 21px;
 	color: #70ad47;
 	margin: 0px 12px;
+}
+
+.transfer_req_lwc_date label {
+	display: none;
+}
+.transfer_req_lwc_date input {
+	border: 0px;
+	border-bottom: 1px solid #a5a5a5;
+	padding-left: 5px;
+	border-radius: 0px;
+	box-shadow: none;
+}
+.transfer_req_lwc_date input:active {
+	box-shadow: none;
+	border: 0px;
+}
+.transfer_req_lwc_date input:focus {
+	box-shadow: none;
+	border: 0px;
 }
 
 /* transfer-req - end */
