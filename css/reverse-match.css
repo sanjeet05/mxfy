@@ -65,6 +65,9 @@
 .bg_white {
 	background: #ffffff !important;
 }
+.cp {
+	cursor: pointer;
+}
 
 .ibm_plex_sans {
 	font-family: "IBMPlexSans";
@@ -223,6 +226,12 @@
 	color: #475765;
 	margin-bottom: 0px !important;
 }
+.select_label_required::before {
+	content: "*";
+	color: #dc3545;
+	padding-right: 3px;
+}
+
 .empty_list img {
 	width: 322px;
 	height: 172px;
