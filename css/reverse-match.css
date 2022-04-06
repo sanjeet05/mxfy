@@ -318,7 +318,7 @@
 }
 
 .data_table .selected_row_2 td:not(:nth-child(1)) {
-	background: #bcbcbc !important;
+	background: #d3e7ca !important;
 }
 
 .bs-scoped .data_table .check_box_row {
@@ -786,7 +786,7 @@
 }
 
 .data_table_2 .selected_row_2 td:not(:nth-child(1)) {
-	background: #bcbcbc !important;
+	background: #d3e7ca !important;
 }
 
 .data_table_2 .checked_image {

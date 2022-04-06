@@ -91,7 +91,7 @@ function createTable() {
 	tableData.forEach((item, i) => {
 		// START NEW ROW
 		myTable += `<tr onclick="handleSelectRow(${i})" class="${
-			selectedRowIndex === i ? "selected_row_2" : ""
+			selectedRowIndex === i ? "selected_row" : "selected_row_2"
 		}">`;
 
 		// "NORMAL" CELL
