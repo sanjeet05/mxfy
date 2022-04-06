@@ -79,7 +79,7 @@
 	flex-direction: row;
 	min-height: 100vh;
 	height: 100%;
-	align-items: stretch;	
+	align-items: stretch;
 }
 .templete_layout_item {
 	display: flex;
@@ -175,7 +175,7 @@
 .main_body {
 	border: 1px solid #e4e4e4;
 	box-sizing: border-box;
-	border-radius: 8px;	
+	border-radius: 8px;
 	height: 60vh;
 	overflow-y: scroll;
 	margin-top: 20px;
@@ -184,7 +184,7 @@
 .main_body_2 {
 	border: 1px solid #e4e4e4;
 	box-sizing: border-box;
-	border-radius: 8px;	
+	border-radius: 8px;
 	height: 45vh;
 	overflow-y: scroll;
 	margin-top: 20px;
@@ -315,6 +315,10 @@
 
 .data_table .selected_row td:not(:nth-child(1)) {
 	background: rgba(92, 155, 213, 0.1) !important;
+}
+
+.data_table .selected_row_2 td:not(:nth-child(1)) {
+	background: #bcbcbc !important;
 }
 
 .bs-scoped .data_table .check_box_row {
@@ -780,12 +784,21 @@
 .data_table_2 .selected_row td:not(:nth-child(1)) {
 	background: rgba(92, 155, 213, 0.1) !important;
 }
+
+.data_table_2 .selected_row_2 td:not(:nth-child(1)) {
+	background: #bcbcbc !important;
+}
+
 .data_table_2 .checked_image {
 	width: 20px;
 	height: 20px;
 	background-image: url("../images/check_ring_round_light.svg");
 }
 .data_table_2 .selected_row .checked_image {
+	background-image: url("../images/check_ring_round_light_selected.svg");
+}
+
+.data_table_2 .selected_row_2 .checked_image {
 	background-image: url("../images/check_ring_round_light_selected.svg");
 }
 
