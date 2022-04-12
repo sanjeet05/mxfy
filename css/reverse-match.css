@@ -1201,3 +1201,13 @@
 }
 
 /* transfer-req - end */
+
+.modal_height_3 {
+	min-height: 300px !important;
+}
+.modal_height_4 {
+	min-height: 400px !important;
+}
+.modal_height_5 {
+	min-height: 500px !important;
+}
