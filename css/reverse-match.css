@@ -1211,3 +1211,7 @@
 .modal_height_5 {
 	min-height: 500px !important;
 }
+
+.lwc_date_required abbr {
+	text-decoration: none !important;
+}
