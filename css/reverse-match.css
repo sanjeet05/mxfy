@@ -74,6 +74,10 @@
 	font-weight: normal;
 }
 
+.d_none {
+	display: none;
+}
+
 .templete_layout {
 	display: flex;
 	flex-direction: row;
@@ -748,6 +752,10 @@
 	padding-bottom: 0px !important;
 }
 
+.bs-scoped .data_table_2 thead tr th {
+	background: inherit !important;
+}
+
 .data_table_2 tbody tr {
 	border: 0px !important;
 	cursor: pointer !important;
@@ -1215,3 +1223,13 @@
 .lwc_date_required abbr {
 	text-decoration: none !important;
 }
+
+/* configure classreem - start */
+
+.config_cls_rm_active_column {
+	font-weight: 400 !important;
+	font-size: 16px !important;
+	color: #70ad47 !important;
+}
+
+/* configure classreem - end */

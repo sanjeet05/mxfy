@@ -239,3 +239,16 @@ function handleChangeForSeatDistribution(event) {
 }
 
 // seat-distribution -end
+
+// configure classroom - start
+
+// onchange of business group
+function handleChangeCentreForConfigClassRm(event) {
+	var value = event.target.dataset.value;
+	console.log(value);
+
+	document.getElementById("emptyList").style.display = "none";
+	document.getElementById("dataTable").style.display = "block";
+}
+
+// configure classroom - end
