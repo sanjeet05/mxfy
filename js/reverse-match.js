@@ -218,6 +218,10 @@ for (let i = 0; i < selectedRows.length; i++) {
 				selectedEle.classList.remove("selected_row");
 			}
 			this.classList.add("selected_row");
+
+			document
+				.getElementById("confirmSelection")
+				?.classList.add("confirm_btn_active");
 		},
 		false
 	);

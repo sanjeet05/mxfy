@@ -1232,4 +1232,14 @@
 	color: #70ad47 !important;
 }
 
+.config_cls_rm_sub_heading {
+	font-family: "IBMPlexSans" !important;
+	font-style: normal;
+	font-weight: 500 !important;
+	font-size: 20px !important;
+	line-height: 26px !important;
+	color: #475765;
+	margin-bottom: 0px !important;
+}
+
 /* configure classreem - end */
