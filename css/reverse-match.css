@@ -55,6 +55,12 @@
 .mr_10 {
 	margin-right: 10px !important;
 }
+.ml_15 {
+	margin-left: 15px !important;
+}
+.mr_15 {
+	margin-right: 15px !important;
+}
 
 .pl_10 {
 	padding-left: 10px !important;
@@ -775,6 +781,11 @@
 	background: #ededed !important;
 }
 
+.data_table_2 tbody tr td:nth-child(1) {
+	border-top-left-radius: 8px !important;
+	border-bottom-left-radius: 8px !important;
+}
+
 .data_table_2 tbody tr td:nth-child(2) {
 	border-top-left-radius: 8px !important;
 	border-bottom-left-radius: 8px !important;
@@ -1226,10 +1237,40 @@
 
 /* configure classreem - start */
 
+.config_cls_scroll {
+	height: 520px;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+	padding: 5px 20px;
+	border: 1px solid #e4e4e4;
+	border-radius: 8px;
+}
+.config_cls_scroll::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+.config_cls_scroll_2 {
+	height: 520px;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+	padding: 5px 20px;
+	border: 1px solid #e4e4e4;
+	border-radius: 8px;
+}
+.config_cls_scroll_2::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
 .config_cls_rm_active_column {
 	font-weight: 400 !important;
 	font-size: 16px !important;
 	color: #70ad47 !important;
+}
+.config_cls_rm_in_active_column {
+	font-weight: 400 !important;
+	font-size: 16px !important;
+	color: #ef5959 !important;
 }
 
 .config_cls_rm_sub_heading {
@@ -1240,6 +1281,130 @@
 	line-height: 26px !important;
 	color: #475765;
 	margin-bottom: 0px !important;
+}
+
+.config_cls_rm_card {
+	border: 1px solid #e4e4e4;
+	box-sizing: border-box;
+	border-radius: 16px;
+	padding: 16px;
+}
+.config_cls_rm_card_heading {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+	color: #475765;
+}
+.config_cls_rm_card_icon {
+	width: 24px;
+	height: 24px;
+	text-align: end;
+	cursor: pointer;
+}
+.config_cls_rm_card_col_1 {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	color: #475765;
+}
+.config_cls_rm_card_col_2 {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	color: #2a6aa6;
+}
+.config_cls_rm_card_col_3 {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	color: #475765;
+}
+.config_cls_rm_card_col_4 {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	color: #2a6aa6;
+	text-align: end;
+}
+
+.config_cls_activate div {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #2a6aa6;
+	padding-left: 5px;
+	width: 110px;
+}
+
+.config_cls_activate img {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+}
+
+.config_cls_table {
+	font-family: "IBMPlexSans" !important;
+	border-collapse: separate !important;
+	border-spacing: 0 10px !important;
+}
+
+.bs-scoped .config_cls_table {
+	border-collapse: separate !important;
+}
+
+.config_cls_table thead tr th {
+	font-style: normal !important;
+	font-weight: 500 !important;
+	font-size: 14px !important;
+	line-height: 18px !important;
+	color: #475765 !important;
+	white-space: nowrap !important;
+	border: 0px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.bs-scoped .config_cls_table thead tr th {
+	background: inherit !important;
+}
+
+.config_cls_table tbody tr {
+	border: 0px !important;
+}
+
+.config_cls_table tbody tr td {
+	border: 0px !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 16px !important;
+	line-height: 21px !important;
+	color: #475765 !important;
+	background: #ededed !important;
+}
+
+.bs-scoped .config_cls_table tbody tr td {
+	background: #ededed !important;
+}
+
+.config_cls_table tbody tr td:nth-child(1) {
+	border-top-left-radius: 8px !important;
+	border-bottom-left-radius: 8px !important;
+}
+.config_cls_table tbody tr td:nth-last-child(1) {
+	border-top-right-radius: 8px !important;
+	border-bottom-right-radius: 8px !important;
 }
 
 /* configure classreem - end */
