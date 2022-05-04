@@ -1463,4 +1463,35 @@
 	width: 24px;
 }
 
+.config_cls_view_match {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #2a6aa6;
+}
+
+.config_cls_success_msg {
+	background: #ffffff;
+	border: 2px solid #70AD47;
+	box-sizing: border-box;
+	box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.12);
+	border-radius: 16px;
+
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	color: #70AD47;
+	padding: 16px;
+	width: 400px;
+}
+.config_cls_success_msg img {
+	margin-right: 10px;
+	height: 24px;
+	width: 24px;
+}
+
 /* configure classreem - end */

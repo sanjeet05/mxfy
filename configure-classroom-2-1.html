@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="lib/bootstrap-4.6.1-scoped/bootstrap.min.css"
+		/>
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="css/reverse-match.css" />
+
+		<!-- fonts -->
+		<link href="lib/fonts.css" rel="stylesheet" />
+
+		<title>Maxify Digital - Configure Classroom</title>
+	</head>
+	<body>
+		<div class="bs-scoped">
+			<div class="transfer_req_body">
+				<div class="d-flex flex-column h-100">
+					<h2 class="transfer_req_heading_h2">Activate Teacher</h2>
+
+					<div class="d-flex flex-column mt-2 pt-1">
+						<label class="select_label">Clasroom Teacher</label>
+						<input
+							type="text"
+							class="date_input"
+							placeholder="Clasroom Teacher"
+						/>
+					</div>
+
+					<div class="d-flex justify-content-end mt-5">
+						<a href="./configure-classroom-1.html">
+							<button class="btn reset_btn cancel_btn">CANCEL</button>
+						</a>
+						<a href="./configure-classroom-3.html">
+							<button class="btn reset_btn ml-3 confirm_btn">SAVE</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bs-scoped">
+			<div class="transfer_req_body">
+				<div class="d-flex flex-column h-100">
+					<h2 class="transfer_req_heading_h2">Edit Classroom Details</h2>
+
+					<div class="d-flex flex-column mt-2 pt-1">
+						<label class="select_label select_label_required"
+							>Classroom Status</label
+						>
+						<div class="select_wrapper">
+							<div class="select_container">
+								<div class="select__trigger bg_white">
+									<span>Select Classroom Status</span>
+								</div>
+								<ul class="select_custom_options">
+									<li
+										class="select_custom_option"
+										data-value="Day Early Learning at Eastern Star Church"
+									>
+										Day Early Learning at Eastern Star Church
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="d-flex justify-content-end mt-5">
+						<a href="./configure-classroom-1.html">
+							<button class="btn reset_btn cancel_btn">CANCEL</button>
+						</a>
+						<a href="./configure-classroom-3.html">
+							<button class="btn reset_btn ml-3 confirm_btn">SAVE</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bs-scoped">
+			<div class="d-flex justify-content-center mt-4">
+				<div class="d-flex config_cls_success_msg">
+					<img src="./images/check_ring_green.svg" />
+					<div>Classroom Details edited successfullly!</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- custom js -->
+		<script src="js/reverse-match.js"></script>
+	</body>
+</html>
