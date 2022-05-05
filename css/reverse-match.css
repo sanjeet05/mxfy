@@ -1474,7 +1474,7 @@
 
 .config_cls_success_msg {
 	background: #ffffff;
-	border: 2px solid #70AD47;
+	border: 2px solid #70ad47;
 	box-sizing: border-box;
 	box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.12);
 	border-radius: 16px;
@@ -1484,7 +1484,7 @@
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 21px;
-	color: #70AD47;
+	color: #70ad47;
 	padding: 16px;
 	width: 400px;
 }
@@ -1492,6 +1492,92 @@
 	margin-right: 10px;
 	height: 24px;
 	width: 24px;
+}
+
+.custom_radio {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.custom_radio label {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	padding-left: 10px;
+	margin-bottom: 0px !important;
+
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 23px;
+	color: #475765;
+}
+.custom_radio label::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 0;
+	margin-left: -20px;
+	border: 1px solid #2a6aa6;
+	border-radius: 50%;
+	background-color: #fff;
+	-webkit-transition: border 0.15s ease-in-out;
+	-o-transition: border 0.15s ease-in-out;
+	transition: border 0.15s ease-in-out;
+}
+.custom_radio label::after {
+	display: inline-block;
+	position: absolute;
+	content: " ";
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 7px;
+	margin-left: -20px;
+	border-radius: 50%;
+	background-color: #555555;
+	-webkit-transform: scale(0, 0);
+	-ms-transform: scale(0, 0);
+	-o-transform: scale(0, 0);
+	transform: scale(0, 0);
+	-webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+	-moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+	-o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+	transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+.custom_radio input[type="radio"] {
+	opacity: 0;
+	z-index: 1;
+}
+
+.custom_radio input[type="radio"]:checked + label::after {
+	-webkit-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	transform: scale(1, 1);
+}
+.custom_radio input[type="radio"]:disabled + label {
+	opacity: 0.65;
+}
+.custom_radio input[type="radio"]:disabled + label::before {
+	cursor: not-allowed;
+}
+.custom_radio.radio-inline {
+	margin-top: 0;
+}
+
+.custom_radio_primary input[type="radio"] + label::after {
+	background-color: #337ab7;
+}
+.custom_radio_primary input[type="radio"]:checked + label::before {
+	border-color: #337ab7;
+	background-color: #337ab7;
+}
+.custom_radio_primary input[type="radio"]:checked + label::after {
+	background-color: #fff;
 }
 
 /* configure classreem - end */
