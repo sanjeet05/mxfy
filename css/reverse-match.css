@@ -260,6 +260,10 @@
 	padding-right: 3px;
 }
 
+.empty_list_height {
+	min-height: 60vh;
+}
+
 .empty_list img {
 	width: 322px;
 	height: 172px;
@@ -1244,30 +1248,37 @@
 
 /* configure classreem - start */
 
+.config_cls_main_body {
+	border: 1px solid #e4e4e4;
+	box-sizing: border-box;
+	border-radius: 8px;
+	margin-top: 20px;
+}
+
 .config_cls_scroll {
-	height: 520px;
+	/* height: 520px;
 	overflow-y: scroll;
-	-ms-overflow-style: none; /* Internet Explorer 10+ */
-	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;
+	scrollbar-width: none;  */
 	padding: 5px 20px;
 	border: 1px solid #e4e4e4;
 	border-radius: 8px;
 }
-.config_cls_scroll::-webkit-scrollbar {
-	display: none; /* Safari and Chrome */
-}
+/* .config_cls_scroll::-webkit-scrollbar {
+	display: none; 
+} */
 .config_cls_scroll_2 {
-	height: 520px;
+	/* height: 520px;
 	overflow-y: scroll;
-	-ms-overflow-style: none; /* Internet Explorer 10+ */
-	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;
+	scrollbar-width: none; */
 	padding: 5px 20px;
 	border: 1px solid #e4e4e4;
 	border-radius: 8px;
 }
-.config_cls_scroll_2::-webkit-scrollbar {
-	display: none; /* Safari and Chrome */
-}
+/* .config_cls_scroll_2::-webkit-scrollbar {
+	display: none; 
+} */
 
 .config_cls_rm_active_column {
 	font-weight: 400 !important;
@@ -1283,6 +1294,11 @@
 	font-weight: 400 !important;
 	font-size: 16px !important;
 	color: #ed7d31 !important;
+}
+.config_cls_rm_open_2_column {
+	font-weight: 400 !important;
+	font-size: 16px !important;
+	color: #ffd700 !important;
 }
 
 .config_cls_rm_sub_heading {
@@ -1471,6 +1487,10 @@
 	line-height: 18px;
 	color: #2a6aa6;
 }
+.config_cls_view_match a {
+	text-decoration: none !important;
+	color: #2a6aa6;
+}
 
 .config_cls_success_msg {
 	background: #ffffff;
@@ -1580,4 +1600,74 @@
 	background-color: #fff;
 }
 
+.config_cls_modal_card {
+	margin: auto;
+	box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.12);
+	border-radius: 16px;
+	min-height: 200px;
+	margin-top: 20px;
+	background: #ffffff;
+	padding: 16px;
+	font-family: "IBMPlexSans";
+}
+.config_cls_modal_card_sm {
+	max-width: 400px;
+}
+
+.config_cls_modal_card_sm_600 {
+	max-width: 600px;
+}
+
+.config_cls_modal_card_md {
+	max-width: 1000px;
+}
+
+.config_cls_eo_match_label {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	color: #475765;
+}
+.config_cls_eo_match_text {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #2a6aa6;
+}
+
+.config_cls_seat_col_1 {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #475765;
+}
+.config_cls_seat_col_2 {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #2a6aa6;
+}
+
+.config_cls_seat_col_3 {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #2a6aa6;
+}
+.config_cls_seat_col_3_red {
+	color: #ef5959;
+}
+.config_cls_seat_col_3_green {
+	color: #70ad47;
+}
 /* configure classreem - end */

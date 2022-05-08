@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="lib/bootstrap-4.6.1-scoped/bootstrap.min.css"
+		/>
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="css/reverse-match.css" />
+
+		<!-- fonts -->
+		<link href="lib/fonts.css" rel="stylesheet" />
+
+		<title>Maxify Digital - Configure Classroom</title>
+	</head>
+	<body>
+		<div class="bs-scoped">
+			<div class="config_cls_modal_card config_cls_modal_card_sm">
+				<div class="d-flex flex-column h-100">
+					<h2 class="transfer_req_heading_h2">EO Match Details</h2>
+
+					<div class="d-flex flex-column mt-2 pt-1">
+						<div class="config_cls_eo_match_label">EO Match Name</div>
+						<div class="config_cls_eo_match_text">EO-001190</div>
+					</div>
+
+					<div class="d-flex flex-column mt-2 pt-1">
+						<div class="config_cls_eo_match_label">EO Match Status</div>
+						<div class="config_cls_eo_match_text">Processed</div>
+					</div>
+
+					<div class="d-flex flex-column mt-2 pt-1">
+						<div class="config_cls_eo_match_label">Match Score</div>
+						<div class="config_cls_eo_match_text">1000</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bs-scoped">
+			<div class="config_cls_modal_card config_cls_modal_card_sm_600">
+				<div class="d-flex flex-column h-100">
+					<h2 class="transfer_req_heading_h2">Seat Details</h2>
+
+					<div class="d-flex mt-2">
+						<div class="d-flex config_cls_activate_msg">
+							<img src="./images/info.svg" />
+							<div>
+								Changing the Age Group effects the Seat Details. Please review !
+							</div>
+						</div>
+					</div>
+
+					<div class="row mt-4 pt-1">
+						<div class="col-9 config_cls_seat_col_1">Physical Room Limit</div>
+						<div class="col-2 config_cls_seat_col_2">10</div>
+						<div class="col-1 config_cls_seat_col_3 config_cls_seat_col_3_red">
+							-2
+						</div>
+					</div>
+					<div class="row mt-2 pt-1">
+						<div class="col-9 config_cls_seat_col_1">
+							Max Classroom Capacity
+						</div>
+						<div class="col-2 config_cls_seat_col_2">10</div>
+						<div class="col-1 config_cls_seat_col_3 config_cls_seat_col_3_red">
+							-2
+						</div>
+					</div>
+					<div class="row mt-2 pt-1">
+						<div class="col-9 config_cls_seat_col_1">Age Group Limit</div>
+						<div class="col-2 config_cls_seat_col_2">14</div>
+						<div class="col-1 config_cls_seat_col_3">NA</div>
+					</div>
+
+					<div class="d-flex justify-content-end mt-4">
+						<button class="btn reset_btn cancel_btn">CANCEL</button>
+
+						<button class="btn reset_btn ml-3 confirm_btn">SAVE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- custom js -->
+		<script src="js/reverse-match.js"></script>
+	</body>
+</html>
