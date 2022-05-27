@@ -1670,4 +1670,14 @@
 .config_cls_seat_col_3_green {
 	color: #70ad47;
 }
+
+.primary_btn_planning {	
+	background: #2a6aa6 !important;
+}
+.primary_btn_closed {	
+	background: #ef5959 !important;
+}
+.primary_btn_temp_closed {	
+	background: #ed7d31 !important;
+}
 /* configure classreem - end */
